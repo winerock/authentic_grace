@@ -1,0 +1,710 @@
+:root {
+    --accent: #36A4A6;
+    --dk-gray: #9E9E9E;
+    --lt-gray: #C4C4C4;
+    --black-alt: #373D4C;
+    --white-alt: #F9FAFB;
+    --accent-highlight: rgba(54, 154, 156, 0.7);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*:before,
+*after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black-alt);
+}
+
+.main-container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.section-header {
+    font-weight: normal;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: .1rem;
+}
+
+:focus {
+    outline: none;
+}
+
+hr {
+    border-top: 1px solid var(--lt-gray);
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
+/* ----------- HEADER ----------- */
+.header-wrapper {
+    display: none;
+}
+
+.header-top-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.btn-social,
+.shopping-bag {
+    color: var(--accent);
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+
+.btn-social:hover,
+.shopping-bag:hover {
+    color: var(--accent-highlight);
+    font-size: 1.6rem;
+}
+
+.search-btn {
+    color: var(--accent);
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 3px 6px;
+    margin-right: 16px;
+}
+
+/* Set padding/margin so that search box doesn't move on hover */
+.search-btn: hover {
+    color: var(--accent-highlight);
+}
+
+.header-top-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 40px;
+    }
+
+/* ----------- NAVBAR ----------- */
+.navbar {
+    font-size: 18px;
+    padding-bottom: 10px;
+    /* background-color: var(--lt-gray); */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-link,
+.logo {
+    text-decoration: none;
+    color: var(--black-alt);
+}
+
+.nav-link:hover, 
+.logo:hover {
+    color: var(--accent);
+}
+
+.navbar-toggle {
+    color: var(--black-alt);
+}
+.navbar-toggle:hover {
+    color: var(--accent);
+}
+
+.main-nav li {
+    text-align: center; 
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(8, 8, 8, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+/* ----------- FEATURE CATEGORY ----------- */
+.feature-wrapper {
+    margin: 20px 30px;
+}
+
+.feature-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-contents {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: var(--black-alt);
+    line-height: 1.3rem;
+    letter-spacing: .1rem;
+}
+
+/* ----------- CATEGORY SHOP SECTION ----------- */
+.category-shop-wrapper {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.category-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.category-link {
+    /* padding: 10px 20px; */
+    margin: 10px 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------- INSTAGRAM SHOP SECTION ----------- */
+.social-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.instagram-slider {
+    text-align: center;
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.slider-pic {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 150px;
+    
+}
+
+/* ----------- BLOG FEATURE SECTION ----------- */
+.sweater-feature {
+    text-align: center;
+    margin: 30px;
+}
+
+/* ----------- REVIEWS SECTION ----------- */
+.love-letters {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.letters-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 60px;
+}
+
+/* ----------- MORE INFO SECTION ----------- */
+.more-info {
+    text-align: center;
+    margin: 30px;
+}
+
+.our-images {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* ----------- FOOTER SECTION ----------- */
+.sign-up {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sign-up label {
+    display: none;
+}
+
+form {
+    margin-top: 10px;
+}
+input[type=text] {
+    width: 359px;
+    height: 43px;
+    background-color: var(--lt-gray);
+    /* font-family: "Roboto"; */
+    font-size: 15px;
+    color: #000;
+    box-shadow: none;
+}
+
+input[type=submit] {
+    width: 134px;
+    height: 45px;
+    /* font-family: "Roboto"; */
+    font-size: 18px;
+    background-color: var(--accent);
+    color: white;
+    letter-spacing: .1rem;;
+    border: none;
+    text-transform: uppercase;
+}
+
+.social {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.address {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.contact {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dk-gray);
+    color: #000;
+    text-align: center;
+    line-height: 50px;
+}
+
+footer p {
+    font-size: .8rem;
+}
+
+footer span {
+    font-size: .7rem;
+}
+
+/* ----------- PRODUCT PAGE ----------- */
+.path {
+    margin: 50px 0 20px 60px;
+    font-weight: 300i;
+    font-style: italic;
+    font-size: .8rem;
+}
+
+.path a {
+    color: var(--black-alt);
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    grid-column-gap: 15px;
+}
+
+/* ----- IMAGES ----- */
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.thumbnails img {
+    max-width: 100%;
+    margin: 5px;
+}
+
+.main-image {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image img {
+    max-width: 100%
+}
+
+/* ----- PRODUCT DETAILS ----- */
+.product-details h2 {
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: var(--accent-highlight);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.product-details h4 {
+    font-weight: normal;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: .8rem;
+}
+
+.item-form input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.stars {
+    color: var(--accent);
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--accent);
+    margin-bottom: 20px;
+}
+
+/* ----- FORM ----- */
+.item-form label {
+    display: inline-block;
+    letter-spacing: .07rem;
+    font-size: 1rem;
+    border: 2px solid var(--dk-gray);
+    text-transform: uppercase;
+    margin: 5px 4px;
+}
+
+.item-form input[type="radio"]:checked + label {
+    background-color: var(--accent);
+    color: white;
+    border-color: var(--dk-gray);
+}
+
+.item-form input[type="radio"]:focus + label {
+    border: 2px dashed var(--accent);
+}
+
+.item-form label:hover {
+    background-color: var(--accent-highlight);
+}
+
+.inseam-select label {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: .8rem;
+}
+
+.size-select label {
+    border-radius: 50%;
+    padding: .4rem;
+    font-size: .8rem;
+}
+
+.add-bag {
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.add-bag button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: .8rem;
+    width: 100%;
+    letter-spacing: .07rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--accent-highlight);
+}
+
+.add-bag button:hover {
+    background-color: var(--accent);
+}
+
+/* ----- INFO ----- */
+.product-info {
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    line-height: 1.1rem;
+    margin-bottom: 10px;
+    /* accordian */
+    position: relative;
+    cursor: pointer;
+}
+
+.product-info span {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.acc-content {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.product-info ul {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/* ----- MIGHT ALSO LIKE ----- */
+.also-like {
+    margin: 60px;
+}
+
+.also-like h2 {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.product-line {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 100%; */
+    /* flex: 1;
+    min-height: 0; */
+}
+
+.item a {
+    max-width: 100%;
+    height: auto;
+}
+
+.item h5 {
+    margin: 3px 0;
+}
+
+.item p {
+    font-size: .8rem;
+    font-style: italic;
+    color: var(--accent);
+}
+
+.interest-item img {
+    max-width: 150px;
+}
+
+/* ----------- TABLET SCREENS ----------- */
+@media screen and (min-width: 768px) {
+    .header-wrapper {
+        display: block;
+    }
+
+    /* Moved all of this for icons into main to fix icons in footer */
+    /* .header-top-row {
+        display: flex;
+        justify-content: space-between;
+    } */
+
+    /* .header-top-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 40px;
+    } */
+
+    /* .btn-social,
+    .shopping-bag {
+        color: var(--accent);
+        padding: 0 10px;
+        font-size: 1.5rem;
+    }
+
+    .btn-social:hover,
+    .shopping-bag:hover {
+        color: var(--accent-highlight);
+        font-size: 1.6rem;
+    }
+
+    .search-btn {
+        color: var(--accent);
+        border: none;
+        font-size: 1.1rem;
+        cursor: pointer;
+        padding: 3px 6px;
+        margin-right: 16px;
+    }
+
+    /* Set padding/margin so that search box doesn't move on hover */
+    /* .search-btn: hover {
+        color: var(--accent-highlight);
+    } */ */
+
+    /* .header-top-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 40px;
+    } */
+
+    #search-bar,
+    .search-btn {
+        margin: 4px 0;
+    }
+
+    .form-inline {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .form-inline label {
+        display: none;
+    }
+
+    .form-inline input {
+        /* Attempt to make animated expanding search bar */
+        /* -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out; */
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 11px;
+        border: 1px solid var(--lt-gray);
+    }
+
+    .form-inline button {
+        /* float: right; */
+        padding: 3px 6px;
+        /* margin-top: 8px; */
+        margin-right: 16px;
+        font-size: 1.3rem;
+        /* border: none; */
+        cursor: pointer;
+        /* background: var(--white-alt); */
+    }
+
+    /* .form-inline button:hover {
+        
+    } */
+
+    input:focus {
+        border: 1px solid var(--accent);
+        /* width: 100%; */
+    }
+
+    .store-name h1 {
+        text-align: center;
+        font-weight: normal;
+        letter-spacing: .2rem;
+        padding: 5px 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: var(--black-alt);
+    }
+    
+    /* ----------- NAVBAR ----------- */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-link {
+        margin: 0 30px;
+        color: var(--black-alt);
+        letter-spacing: .2rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    /* ----------- CATEGORY SECTION ----------- */
+    /* .category-image {
+        max-width: 100px;
+        height: auto;
+    } */
+
+}
+
+
+/* ----------- DESKTOP SCREENS ----------- */
+@media screen and (min-width: 1024px) {
+    .category-image {
+        max-width: 550px;
+        height: auto;
+    }
+
+}
+
+
+
+
