@@ -270,7 +270,7 @@ h3, h4 {
 /* ----------- FOOTER SECTION ----------- */
 .sign-up {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .sign-up label {
@@ -301,6 +301,13 @@ input[type=submit] {
     border: none;
     text-transform: uppercase;
 }
+
+.care {
+    float: center;
+    
+    text-align: center;
+}
+
 
 .social {
     float: left;
