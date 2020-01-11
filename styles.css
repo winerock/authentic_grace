@@ -26,8 +26,17 @@ body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', serif;
     color: var(--black-alt);
+}
+
+ h2, h3, h4 {
+    text-align: center; 
+}
+
+h1 {
+    text-align: center; 
+    font-family:'Euclid Fraktur', serif;
 }
 
 .main-container {
@@ -54,6 +63,8 @@ body {
 
 hr {
     border-top: 1px solid var(--lt-gray);
+    width: 80%;
+    margin: auto;
 }
 
 a, a:hover, a:active, a:visited, a:focus {
@@ -170,9 +181,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 /* ----------- FEATURE CATEGORY ----------- */
-h3, h4 {
-    text-align: center; 
-}
+
 
 .feature-wrapper {
     margin: 20px 30px;
@@ -302,27 +311,31 @@ input[type=submit] {
     text-transform: uppercase;
 }
 
-.care {
-    float: center;
+.social {
     
     text-align: center;
 }
 
+.care {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
 
-.social {
+.company {
     float: left;
     width: 33.33%;
     text-align: center;
 }
 
 .address {
-    float: left;
+    float: right;
     width: 33.33%;
     text-align: center;
 }
 
 .contact {
-    float: left;
+    float: right;
     width: 33.33%;
     text-align: center;
 }
