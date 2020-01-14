@@ -112,7 +112,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 /* Set padding/margin so that search box doesn't move on hover */
-.search-btn: hover {
+.search-btn:hover {
     color: var(--accent-highlight);
 }
 
@@ -240,8 +240,8 @@ a, a:hover, a:active, a:visited, a:focus {
 .slider-pic {
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
     
 }
 
@@ -267,10 +267,23 @@ a, a:hover, a:active, a:visited, a:focus {
     padding: 20px 60px;
 }
 
+.love-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 4px;
+}
+
+.love-column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0px 4px;
+  }
+
+
 /* ----------- MORE INFO SECTION ----------- */
 .more-info {
     text-align: center;
-    margin: 30px;
+    margin: 20px 20px;
 }
 
 .our-images {
@@ -278,7 +291,7 @@ a, a:hover, a:active, a:visited, a:focus {
     padding-right: 5px;
 }
 
-/* ----------- FOOTER SECTION ----------- */
+/* ----------- SIGN UP SECTION ----------- */
 .sign-up {
     text-align: center;
     margin-top: 10px;
@@ -311,6 +324,12 @@ input[type=submit] {
     letter-spacing: .1rem;;
     border: none;
     text-transform: uppercase;
+}
+
+/* ----------- FOOTER SECTION ----------- */
+
+.footer-wrap {
+    flex-wrap: flex;    text-align: center;
 }
 
 .social {
@@ -565,6 +584,14 @@ footer span {
     max-width: 150px;
 }
 
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .love-column {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+
 /* ----------- TABLET SCREENS ----------- */
 @media screen and (min-width: 768px) {
     .header-wrapper {
@@ -735,3 +762,4 @@ footer span {
 
 
 
+}
