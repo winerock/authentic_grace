@@ -1,7 +1,7 @@
 
 # Authentic Grace
 
-Preview: [Authentic Grace](https://winerock.github.io/authentic_grace/)
+View site [on Github](https://winerock.github.io/authentic_grace/) and [on Netlify](https://historically-authentic-grace.netlify.com/)
 
 ## About the Project
 
