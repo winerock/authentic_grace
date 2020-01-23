@@ -22,7 +22,8 @@ The requirements of the project were...
 
 ## Project Wireframe
 
-The wireframe was built on Canva and can be viewed [here](https://www.canva.com/design/DADwStfzwnM/KvTiU1HFrt9kz2fXHuKyJw/view?website#4:authentic-grace).
+The front-page wireframe was built on Canva and can be viewed [here](https://www.canva.com/design/DADwStfzwnM/KvTiU1HFrt9kz2fXHuKyJw/view?website#4:authentic-grace).
+The front-page wireframe was built on Figma and can be viewed [here](https://www.figma.com/file/rmyng2AfkO8AMlChUWNa0S/Elizabethan-Gown?node-id=0%3A1) and [here](https://i.ibb.co/sQVpscq/Figma-Wire-Frame-Elizabethan-Gown.jpg).
 
 
 ## Lessons Learned Through This Project
